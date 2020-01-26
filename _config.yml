@@ -22,11 +22,18 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: twbompo
 github_username:  bompo
 
+paginate: 5
+
 # Build settings
 markdown: kramdown
+highlighter: rouge
 remote_theme: fongandrew/hydeout
 plugins:
   - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+
+sidebar_home_link:  true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
