@@ -4,3 +4,138 @@
 ---
 
 @import "hydeout";
+
+.home.index #sidebar {
+	background-image: url(../images/sidebar_background.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 100vh;
+}
+
+#sidebar {
+	background-image: url(../images/sidebar_background.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 100vh;
+}
+
+
+body {
+    background-color: #4d5852;
+    background-image: none;
+}
+
+#sidebar .site-title {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif
+}
+
+.home #sidebar .site-title {
+    font-size: 1.5rem;
+}
+
+.site-title {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif
+}
+
+a svg {
+    fill: #000000;
+}
+
+.portfolioShowcasestyle__MetaItem {
+	float: right;
+	padding-left: 10px;
+	z-index: 1;
+}
+
+#sidebar .site-title {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 0.25rem;
+}
+
+.home #sidebar header ~ *, .home #sidebar p.lead {
+    
+}
+
+.container {
+    padding: 1rem 4rem 0;
+ }
+
+.intro {
+	font-size: 16px;
+    margin-bottom: 0.25rem;
+}
+
+.job {
+	font-size: 16px;
+    margin-bottom: 2rem;
+}
+
+#sidebar header ~ *, #sidebar p.lead {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.5;
+    color: rgba(255,255,255,.7);
+}
+
+.video-container{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.video-container img {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  bottom: 0px;
+  position: absolute;
+}
+
+.video-container .image_playbutton {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  top: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+.video-container iframe,{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.video-container iframe{
+  position: absolute;
+  top: -60px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 120px);
+}
+
+@media (max-width: 49rem) {
+	.home.index #sidebar {
+	    height: 50vh;
+	}
+
+	#sidebar {
+	    height: 50vh;
+	}
+}

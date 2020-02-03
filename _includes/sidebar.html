@@ -1,5 +1,6 @@
 <div id="sidebar">
   <header>
+    <p class="intro">Hello, I'm</p>
     <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
       <a href="{{ "/" | relative_url }}">
         {% unless page.url == "/" %}
@@ -8,6 +9,7 @@
         {{ site.title }}
       </a>
     </{% if page.layout == "index" %}h1{% else %}div{% endif %}>
+    <p class="job">Lead Developer at <br/>Die Kapitäene Media GmbH</p>
     <p class="lead">{{ site.description }}</p>
   </header>
   {% include sidebar-nav-links.html %}
@@ -17,5 +19,4 @@
   {% endif %}
 
   {% include sidebar-icon-links.html %}
-  {% include copyright.html %}
 </div>

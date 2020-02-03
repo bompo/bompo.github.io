@@ -1,0 +1,90 @@
+---
+layout: default
+title: Portfolio
+order: 1
+sidebar_link: true
+---
+
+<script>
+	var isReady = false
+	var callbacks = []
+
+	window.enqueueOnYoutubeIframeAPIReady = function (callback) {
+	if (isReady) {
+	  callback()
+	} else {
+	  callbacks.push(callback)
+	}
+	}
+
+	window.onYouTubeIframeAPIReady = function () {
+	isReady = true
+	callbacks.forEach(function (callback) {
+	  callback()
+	})
+	callbacks.splice(0)
+	}
+	
+	var tag = document.createElement('script');
+
+	tag.src = "https://www.youtube.com/iframe_api";
+
+	var firstScriptTag = document.getElementsByTagName("script")[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+</script>
+
+{% assign portfolio-items = site.portfolio-items | sort: 'date' | reverse %}
+{% for portfolio-item in portfolio-items %}
+<article>
+	<div class="video-container" >
+		
+		<img src="assets/images/{{ portfolio-item.cover-image }}">
+		
+		{% if portfolio-item.video-id != null %}
+		<img src="assets/images/icon_play.png" class="image_playbutton">
+		  
+	  	<div id="{{ portfolio-item.video-id | replace: "-", "" }}"></div>
+
+	    <script>
+	      var player{{ portfolio-item.video-id | replace: "-", "" }};
+	      enqueueOnYoutubeIframeAPIReady(function () {
+	        player{{ portfolio-item.video-id | replace: "-", "" }} = new YT.Player('{{ portfolio-item.video-id | replace: "-", "" }}', {
+	          height: '390',
+	          width: '640',
+	          playerVars: { 'autoplay': 0, 'controls': 0 },
+	          videoId: '{{ portfolio-item.video-id }}',
+	          events: {
+	            'onStateChange': onPlayerStateChange{{ portfolio-item.video-id | replace: "-", "" }}
+	          }
+	        });
+	      });
+
+	      var done{{ portfolio-item.video-id | replace: "-", "" }} = false;
+	      function onPlayerStateChange{{ portfolio-item.video-id | replace: "-", "" }}(event) {
+	        if (event.data == YT.PlayerState.PLAYING && !done{{ portfolio-item.video-id | replace: "-", "" }}) {
+	          document.getElementById('{{ portfolio-item.video-id | replace: "-", "" }}').style.opacity=1;
+	          done{{ portfolio-item.video-id | replace: "-", "" }} = true;
+	        }
+	        if (event.data == YT.PlayerState.ENDED) {
+	          document.getElementById('{{ portfolio-item.video-id | replace: "-", "" }}').style.opacity=0;
+	          player{{ portfolio-item.video-id | replace: "-", "" }}.pauseVideo();
+	          player{{ portfolio-item.video-id | replace: "-", "" }}.seekTo(0, false);
+	        }
+	        if (event.data == YT.PlayerState.PAUSED) {
+	          document.getElementById('{{ portfolio-item.video-id | replace: "-", "" }}').style.opacity=0;
+	          done{{ portfolio-item.video-id | replace: "-", "" }} = false;
+	        }
+	      }
+	    </script> 
+	    {% endif %}
+
+	</div>  
+
+	<div class="portfolioShowcasestyle"><span class="portfolioShowcasestyle_meta_featured"><b>{{ portfolio-item.name }}</b></span>{% if portfolio-item.downloads != null %}
+<span class="portfolioShowcasestyle__MetaItem"><b>{{ portfolio-item.downloads }}</b> Downloads</span>{% endif %}</div>
+
+	<div class="portfolioShowcasestyle"><span class="portfolioShowcasestyle_meta_featured">{{ portfolio-item.project-duration }}</span>, <span class="portfolioShowcasestyle_meta_featured">{{ portfolio-item.team-size }}</span>{% if portfolio-item.play-store-link != null %}<span class="portfolioShowcasestyle__MetaItem"><a id="tags-link" class="icon" href="{{ portfolio-item.play-store-link }}">{% include svg/google-play-store.svg %}</a></span>{% endif %}{% if portfolio-item.app-store-link != null %}<span class="portfolioShowcasestyle__MetaItem"><a id="tags-link" class="icon" href="{{ portfolio-item.app-store-link }}">{% include svg/apple-black.svg %}</a></span>{% endif %}{% if portfolio-item.facebook-store-link != null %}<span class="portfolioShowcasestyle__MetaItem"><a id="tags-link" class="icon" href="{{ portfolio-item.facebook-store-link }}">{% include svg/facebook-icon.svg %}</a></span>{% endif %}</div>
+	
+	<p>{{ portfolio-item.content | markdownify }}</p>
+</article>
+{% endfor %}
