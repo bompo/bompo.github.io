@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: Portfolio
 order: 1
 sidebar_link: true
@@ -33,6 +33,8 @@ sidebar_link: true
 	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 </script>
 
+<div class="content">
+
 {% assign portfolio-items = site.portfolio-items | sort: 'date' | reverse %}
 {% for portfolio-item in portfolio-items %}
 <article>
@@ -62,8 +64,16 @@ sidebar_link: true
 	      var done{{ portfolio-item.video-id | replace: "-", "" }} = false;
 	      function onPlayerStateChange{{ portfolio-item.video-id | replace: "-", "" }}(event) {
 	        if (event.data == YT.PlayerState.PLAYING && !done{{ portfolio-item.video-id | replace: "-", "" }}) {
-	          document.getElementById('{{ portfolio-item.video-id | replace: "-", "" }}').style.opacity=1;
-	          done{{ portfolio-item.video-id | replace: "-", "" }} = true;
+				document.getElementById('{{ portfolio-item.video-id | replace: "-", "" }}').style.opacity=1;
+				done{{ portfolio-item.video-id | replace: "-", "" }} = true;
+
+				if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+				  iframe = document.getElementById('{{ portfolio-item.video-id | replace: "-", "" }}');
+				  var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+				  if (requestFullScreen) {
+					requestFullScreen.bind(iframe)();
+				  }
+				}
 	        }
 	        if (event.data == YT.PlayerState.ENDED) {
 	          document.getElementById('{{ portfolio-item.video-id | replace: "-", "" }}').style.opacity=0;
@@ -71,8 +81,19 @@ sidebar_link: true
 	          player{{ portfolio-item.video-id | replace: "-", "" }}.seekTo(0, false);
 	        }
 	        if (event.data == YT.PlayerState.PAUSED) {
-	          document.getElementById('{{ portfolio-item.video-id | replace: "-", "" }}').style.opacity=0;
-	          done{{ portfolio-item.video-id | replace: "-", "" }} = false;
+				document.getElementById('{{ portfolio-item.video-id | replace: "-", "" }}').style.opacity=0;
+				done{{ portfolio-item.video-id | replace: "-", "" }} = false;
+				if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+					if (document.exitFullscreen) {
+						document.exitFullscreen();
+					} else if (document.mozCancelFullScreen) { /* Firefox */
+						document.mozCancelFullScreen();
+					} else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+						document.webkitExitFullscreen();
+					} else if (document.msExitFullscreen) { /* IE/Edge */
+						document.msExitFullscreen();
+					}
+				}
 	        }
 	      }
 	    </script> 
@@ -88,3 +109,5 @@ sidebar_link: true
 	<p>{{ portfolio-item.content | markdownify }}</p>
 </article>
 {% endfor %}
+
+</div>
