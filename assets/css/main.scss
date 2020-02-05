@@ -26,6 +26,7 @@ body {
     line-height: 1;
     color: #fff;
     margin-bottom: 0.3rem !important;
+    font-weight: bold !important;
 }
 
 a svg {
@@ -42,6 +43,10 @@ a svg {
     
 }
 
+#sidebar-nav-links {
+	margin-bottom: 2rem;
+}
+
 .container {
     padding: 1rem 4rem 0;
  }
@@ -53,7 +58,7 @@ a svg {
 
 .job {
 	font-size: 16px;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 #sidebar header ~ *, #sidebar p.lead {
@@ -114,7 +119,25 @@ a svg {
   display: none;
 }
 
+@media (min-width: 49rem) {
+	#sidebar-icon-links-bottom {
+		bottom: 0;
+	    left: 13rem;
+	    position: absolute !important;
+	}
+
+	#sidebar-icon-links {
+		bottom: 0;
+	    left: 1.5rem;
+	    position: absolute !important;
+	}
+}
+
 @media (max-width: 49rem) {
+
+	#sidebar-icon-links-bottom {
+		display: none !important;
+	}
 	
 	#sidebar {
 		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/sidebar_background.jpg);
@@ -124,7 +147,7 @@ a svg {
 	}
 
 	#sidebar {
-	    height: 60vh;
+	    height: 57vh;
 	}
 
 	.container {
