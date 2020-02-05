@@ -18,6 +18,6 @@ tags:
 3 Months
 
 ### Link
-http://tourschall.com/
+<http://tourschall.com/>
 
 Android version of interactive city guide software.

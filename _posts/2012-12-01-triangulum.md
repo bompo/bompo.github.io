@@ -18,7 +18,6 @@ Solo
 2 Days
 
 ### Link
-http://ludumdare.com/compo/ludum-dare-26/?action=preview&uid=7570
-
+<http://ludumdare.com/compo/ludum-dare-26/?action=preview&uid=7570>
 
 Ludum Dare 48h Combo Entry, Theme: Minimalism
