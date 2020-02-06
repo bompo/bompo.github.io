@@ -5,34 +5,6 @@ order: 1
 sidebar_link: true
 ---
 
-<script>
-	var isReady = false
-	var callbacks = []
-
-	window.enqueueOnYoutubeIframeAPIReady = function (callback) {
-	if (isReady) {
-	  callback()
-	} else {
-	  callbacks.push(callback)
-	}
-	}
-
-	window.onYouTubeIframeAPIReady = function () {
-	isReady = true
-	callbacks.forEach(function (callback) {
-	  callback()
-	})
-	callbacks.splice(0)
-	}
-	
-	var tag = document.createElement('script');
-
-	tag.src = "https://www.youtube.com/iframe_api";
-
-	var firstScriptTag = document.getElementsByTagName("script")[0];
-	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-</script>
-
 <div class="content">
 
 {% assign portfolio-items = site.portfolio-items | sort: 'date' | reverse %}

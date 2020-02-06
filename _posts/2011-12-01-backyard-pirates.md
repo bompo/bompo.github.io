@@ -5,11 +5,13 @@ categories:
   - Portfolio
 tags:
   - Portfolio
+excerpt_separator: "<!--more-->"
 ---
 
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe width="640" height="360" class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/xNmInX9I25s?controls=1&amp;" frameborder="0" allowfullscreen></iframe>
-</div>
+{% include youtube.html video-id="xNmInX9I25s" cover-image="backyardpirates_cover.jpg" %}
+
+ ឵឵
+<!--more-->
 
 ### Team size
 Solo

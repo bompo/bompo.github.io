@@ -1,0 +1,62 @@
+<div class="video-container" >
+	
+	<img src="{{site.baseurl}}/assets/images/{{ include.cover-image }}">
+	
+	{% if include.video-id != null %}
+	<img src="{{site.baseurl}}/assets/images/icon_play.png" class="image_playbutton">
+	  
+  	<div id="{{ include.video-id | replace: "-", "" }}"></div>
+
+    <script>
+      var player{{ include.video-id | replace: "-", "" }};
+      enqueueOnYoutubeIframeAPIReady(function () {
+        player{{ include.video-id | replace: "-", "" }} = new YT.Player('{{ include.video-id | replace: "-", "" }}', {
+          height: '390',
+          width: '640',
+          playerVars: { 'autoplay': 0, 'controls': 0 },
+          videoId: '{{ include.video-id }}',
+          events: {
+            'onStateChange': onPlayerStateChange{{ include.video-id | replace: "-", "" }}
+          }
+        });
+      });
+
+      var done{{ include.video-id | replace: "-", "" }} = false;
+      function onPlayerStateChange{{ include.video-id | replace: "-", "" }}(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done{{ include.video-id | replace: "-", "" }}) {
+			document.getElementById('{{ include.video-id | replace: "-", "" }}').style.opacity=1;
+			done{{ include.video-id | replace: "-", "" }} = true;
+
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			  iframe = document.getElementById('{{ include.video-id | replace: "-", "" }}');
+			  var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+			  if (requestFullScreen) {
+				requestFullScreen.bind(iframe)();
+			  }
+			}
+        }
+        if (event.data == YT.PlayerState.ENDED) {
+          document.getElementById('{{ include.video-id | replace: "-", "" }}').style.opacity=0;
+          player{{ include.video-id | replace: "-", "" }}.pauseVideo();
+          player{{ include.video-id | replace: "-", "" }}.seekTo(0, false);
+        }
+        if (event.data == YT.PlayerState.PAUSED) {
+			document.getElementById('{{ include.video-id | replace: "-", "" }}').style.opacity=0;
+			done{{ include.video-id | replace: "-", "" }} = false;
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+				if (document.exitFullscreen) {
+					document.exitFullscreen();
+				} else if (document.mozCancelFullScreen) { /* Firefox */
+					document.mozCancelFullScreen();
+				} else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+					document.webkitExitFullscreen();
+				} else if (document.msExitFullscreen) { /* IE/Edge */
+					document.msExitFullscreen();
+				}
+			}
+        }
+      }
+    </script> 
+    {% endif %}
+
+</div>  

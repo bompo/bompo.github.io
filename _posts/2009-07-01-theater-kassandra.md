@@ -5,11 +5,13 @@ categories:
   - Portfolio
 tags:
   - Portfolio
+excerpt_separator: "<!--more-->"
 ---
 
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe width="640" height="360" class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/kXb28Y_6PHs?controls=1&amp;" frameborder="0" allowfullscreen></iframe>
-</div>
+{% include youtube.html video-id="kXb28Y_6PHs" cover-image="kptheaterkassandra_cover.jpg" %}
+
+ ឵឵
+<!--more-->
 
 ### Team size
 5 People
