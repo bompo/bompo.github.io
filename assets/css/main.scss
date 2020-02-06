@@ -143,6 +143,10 @@ a svg {
 
 @media (max-width: 49rem) {
 
+  .content .pagination:first-child {
+      margin-top: 0em;
+  }
+
 	#sidebar-icon-links-bottom {
 		display: none !important;
 	}
@@ -161,4 +165,123 @@ a svg {
 	.container {
     	padding: 0;
  	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  --color-text: #2e2e2e;
+  --color-text-frame: #fff;
+  --color-bg: #fff;
+  --color-link: #555;
+  --color-link-hover: #fff;
+  --color-intro-bg: #0e0e0e;
+  --color-intro-title: #fff;
+  --color-enter: #fff;
+  --color-content-title: #111;
+  --color-content-text: #868181;
+  --color-select: #111;
+  --color-select-item: #868181;
+  --color-select-item-hover: #000;
+  --color-select-current: #111;
+  --color-social: #555;
+  --color-social-hover: #000;
+  --color-reel-number: #111;
+  --color-menu-link: #101010;
+  --color-menu-link-hover: #000;
+  color: rgba(255, 255, 255, 0.7);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.demo-4 {
+  --color-bg: #bd9062;
+  --color-overlay-1: #835d52;
+    --color-overlay-2: #8ca8b3;
+    --color-overlay-3: #70675b;
+    --color-menu-link: #f9f9f9;
+  --color-menu-link-hover: #fff;
+}
+
+
+/* Page Loader */
+.js .loading::before {
+  content: '';
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-intro-bg);
+}
+
+.js .loading::after {
+  content: '';
+  position: fixed;
+  z-index: 100000;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin: -15px 0 0 -15px;
+  pointer-events: none;
+  opacity: 0.4;
+  background: var(--color-intro-title);
+  transform-origin: 50% 100%;
+  transform: rotate3d(0,0,1,45deg);
+  animation: loaderAnim 0.7s linear infinite alternate forwards;
+}
+
+@keyframes loaderAnim {
+  to {
+    opacity: 1;
+    transform: rotate3d(0,0,1,45deg) scale3d(1,0,1) rotate3d(0,0,1,-180deg);
+  }
+}
+
+
+.frame {
+  padding: 3rem 5vw;
+  text-align: center;
+  position: relative;
+  text-transform: lowercase;
+  color: var(--color-text-frame);
+}
+
+.frame__title {
+  font-size: 1rem;
+  margin: 0 0 1rem;
+  font-weight: normal;
+}
+
+.frame__links {
+  display: inline-block;
+  margin: 0 0 1rem;
+}
+
+.frame__links a,
+.frame__demos a {
+  margin: 0 0 0 1rem;
+}
+
+.frame__demos::before {
+  content: 'Examples: ';
+}
+
+.frame__demo--current,
+.frame__demo--current:hover {
+  color: var(--color-link-hover);
 }

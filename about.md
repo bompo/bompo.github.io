@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: page
 title: Impressum
 sidebar_sort_order: 4
 sidebar_link: true
 ---
 
-## Impressum
 Angaben gemäß § 5 TMG
 
 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
