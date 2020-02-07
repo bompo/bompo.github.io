@@ -7,9 +7,9 @@
 
 #sidebar {
 	background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url(../images/sidebar_background.jpg);
-	background-size: contain;
+	background-size: 350px;
+  background-position: 50% 100%;;
 	background-repeat: no-repeat;
-	background-position: bottom;
 	height: 100vh;
 }
 
@@ -147,15 +147,19 @@ a svg {
       margin-top: 0em;
   }
 
+  body {
+    background-color: #262c28;
+  }
+
 	#sidebar-icon-links-bottom {
 		display: none !important;
 	}
 	
 	#sidebar {
 		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/sidebar_background.jpg);
-		background-size: contain;
+		background-size: 290px;
 		background-repeat: no-repeat;
-		background-position: bottom;
+    background-position: 50% 100%;;
 	}
 
 	#sidebar {

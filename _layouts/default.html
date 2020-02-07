@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
+<script src="{{site.baseurl}}/assets/js/anime.min.js"></script>
+
 <script>
 	var isReady = false
 	var callbacks = []
@@ -40,5 +42,69 @@
     </main>
 
     {% include custom-foot.html %}
+
+<script>
+
+	if(window.location.href.indexOf(".html") <= 0) {
+		anime({
+		  targets: ['.intro'],
+		  translateX: ['-150px', '0px'],
+		  opacity: ['0', '1'],
+		  duration: 500,
+		  delay: 0,
+		  easing: 'easeOutQuint',
+		});
+
+		anime({
+		  targets: ['.site-title'],
+		  translateX: ['-150px', '0px'],
+		  opacity: ['0', '1'],
+		  duration: 500,
+		  delay: 100,
+		  easing: 'easeOutQuint',
+		});
+
+		anime({
+		  targets: ['.job'],
+		  translateX: ['-150px', '0px'],
+		  opacity: ['0', '1'],
+		  duration: 500,
+		  delay: 200,
+		  easing: 'easeOutQuint',
+		});
+
+		anime({
+		  targets: ['.lead'],
+		  translateX: ['-150px', '0px'],
+		  opacity: ['0', '1'],
+		  duration: 500,
+		  delay: 400,
+		  easing: 'easeOutQuint',
+		});
+
+		anime({
+		  targets: ['#sidebar-nav-links'],
+		  translateX: ['-150px', '0px'],
+		  opacity: ['0', '1'],
+		  duration: 500,
+		  delay: 500,
+		  easing: 'easeOutQuint',
+		});
+
+
+		anime({
+		  targets: ['#sidebar'],
+		  //backgroundPosition: ['-4000px 100%', '50% 100%'],
+		  opacity: ['0', '1'],
+		  duration: 2000,
+		  delay: 0
+		});
+		
+
+    }
+
+	
+</script>
+    
   </body>
 </html>
