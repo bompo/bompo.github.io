@@ -13,10 +13,4 @@ excerpt_separator: "<!--more-->"
  ឵឵
 <!--more-->
 
-### Team size
-5 People
-
-### Project duration
-3 Months
-
 Management software for a theatre

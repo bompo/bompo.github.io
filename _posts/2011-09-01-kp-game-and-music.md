@@ -13,10 +13,4 @@ excerpt_separator: "<!--more-->"
  ឵឵
 <!--more-->
 
-### Team size
-2 People
-
-### Project duration
-2 Months
-
 Music driven, climb the tower, platform game

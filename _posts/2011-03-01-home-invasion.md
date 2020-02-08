@@ -13,12 +13,6 @@ excerpt_separator: "<!--more-->"
  ឵឵
 <!--more-->
 
-### Team size
-2 People
-
-### Project duration
-3 Months
-
 ### Playstore link: 
 <https://play.google.com/store/apps/details?id=de.swagner.homeinvasion&hl=en>
 

@@ -13,12 +13,6 @@ excerpt_separator: "<!--more-->"
  ឵឵
 <!--more-->
 
-### Team size
-Solo
-
-### Project duration
-2 Days
-
 ### Link
 <http://ludumdare.com/compo/ludum-dare-23/?action=preview&uid=7570>
 
