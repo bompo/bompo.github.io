@@ -18,6 +18,8 @@ Recruit soldiers, capture bases, and grow your army into a formidable force with
 
 Become the most feared warrior on the battlefield and destroy your enemies! Choose your hero, battle in bustling arenas across the kingdom, and earn awesome bonuses by taking on exciting live missions!
 
+![placeholder]({{site.baseurl}}/assets/images/tinyarmies_assets.jpg "Assets")
+
 **FEATURES**
 * PvP Action like no other: Fight up to 8 players in epic multiplayer battles
 * Guide your army around the arena and recruit the villagers to increase your power
