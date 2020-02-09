@@ -10,13 +10,13 @@ excerpt_separator: "<!--more-->"
 
 {% include youtube.html video-id="EMLplfjU9aU" cover-image="totemtower_cover.jpg" %}
 
-{% include video.html video-file-name="totem_tower_battle.mp4" %}
+{% include video.html video-file-name="totem_tower_battle.mp4" video-style="landscape" %}
 
 We just released our newest game Totem Tower for Android. 
 
 [https://play.google.com/store/apps/details?id=de.kapitaene.totem](https://play.google.com/store/apps/details?id=de.kapitaene.totem)
 
-{% include video.html video-file-name="totem_tower_matchmaking.mp4" %}
+{% include video.html video-file-name="totem_tower_matchmaking.mp4" video-style="landscape" %}
 
 **Enter the world of Totem Tower and defeat your opponents!**
 
@@ -27,4 +27,4 @@ We just released our newest game Totem Tower for Android. 
 * Compete with your daily highscore in CHALLENGE mode against players from around the world!
 * Train your skills against A.I. in the TUTORIAL mode before you compete ONLINE against real players!
 
-{% include video.html video-file-name="totem_tower_result.mp4" %}
+{% include video.html video-file-name="totem_tower_result.mp4" video-style="landscape" %}
