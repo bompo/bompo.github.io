@@ -13,7 +13,7 @@
         player{{ include.video-id | replace: "-", "" }} = new YT.Player('{{ include.video-id | replace: "-", "" }}', {
           height: '390',
           width: '640',
-          playerVars: { 'autoplay': 0, 'controls': 0 },
+          playerVars: { 'autoplay': 0, 'controls': 1, 'ref': 0 },
           videoId: '{{ include.video-id }}',
           events: {
             'onStateChange': onPlayerStateChange{{ include.video-id | replace: "-", "" }}
