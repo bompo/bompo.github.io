@@ -43,17 +43,6 @@
         if (event.data == YT.PlayerState.PAUSED) {
 			document.getElementById('{{ include.video-id | replace: "-", "" }}').style.opacity=0;
 			done{{ include.video-id | replace: "-", "" }} = false;
-			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-				if (document.exitFullscreen) {
-					document.exitFullscreen();
-				} else if (document.mozCancelFullScreen) { /* Firefox */
-					document.mozCancelFullScreen();
-				} else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
-					document.webkitExitFullscreen();
-				} else if (document.msExitFullscreen) { /* IE/Edge */
-					document.msExitFullscreen();
-				}
-			}
         }
       }
     </script> 
