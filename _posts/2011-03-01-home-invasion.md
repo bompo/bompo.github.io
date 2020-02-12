@@ -16,5 +16,5 @@ excerpt_separator: "<!--more-->"
 ### Playstore link: 
 <https://play.google.com/store/apps/details?id=de.swagner.homeinvasion&hl=en>
 
-Home Invasion is a location-based game for Android devices.
+This is a rebrand of PacMap, a location-based game for Android devices.
 You control your spaceship by walking outside in your neighborhood. Yes! You have to go outside to play this game. To play, you need a constant GPS signal, a working internet connection and some nearby roads.
