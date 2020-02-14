@@ -10,3 +10,5 @@ project-duration: 1 Year
 ---
 
 Trivia Game where you can earn real money if you guess good.
+
+[More...]({% post_url 2018-06-01-quizfriends %})

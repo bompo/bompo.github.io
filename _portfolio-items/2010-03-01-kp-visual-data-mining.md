@@ -8,3 +8,5 @@ project-duration: 3 Months
 --- 
 
 Data Mining Prototyp to visualize companies and their relations according to different sources.
+
+[More...]({% post_url 2010-03-01-kp-visual-data-mining %})

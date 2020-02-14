@@ -10,3 +10,5 @@ project-duration: 6 Months
 ---
 
 Multiplayer Two Player Duel Game
+
+[More...]({% post_url 2015-06-01-release_totem_tower %})

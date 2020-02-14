@@ -8,12 +8,22 @@ tags:
 excerpt_separator: "<!--more-->"
 ---
 
-![placeholder]({{site.baseurl}}/assets/images/badminton_unit_1.jpg "ocotopus")
+{% include video.html video-file-name="badminton.mp4" video-style="landscape" %}
+
+**Update**
+
+I rigged the model in blender, imported it to unity and then placed an rigidbody on each bone. The tentacles who holds the racked and the head has an constant up force applied. The rotation is done with torque force applied on the root bone. You can try the [live demo](https://developer.cloud.unity3d.com/share/-ypF6rTDVz/).
+
+___
+
+![placeholder]({{site.baseurl}}/assets/images/badminton_unit_1.jpg "ocotopus"){:width="400px"}
 
 ![placeholder]({{site.baseurl}}/assets/images/badminton_unit_1.gif "ocotopus")
 
-![placeholder]({{site.baseurl}}/assets/images/badminton_unit_2.jpg "elephant")
+![placeholder]({{site.baseurl}}/assets/images/badminton_unit_2.jpg "elephant"){:width="400px"}
 
 ![placeholder]({{site.baseurl}}/assets/images/badminton_unit_2.gif "elephant")
 
 Badminton minigame character concept.
+
+[Open Source](https://github.com/bompo/SuperTurboBadmintonDeluxeUnity)

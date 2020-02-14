@@ -11,3 +11,5 @@ project-duration: 3 Months
 ---
 
 Trivia Game for Facebook Instant.
+
+[More...]({% post_url 2017-11-01-guess_success %})

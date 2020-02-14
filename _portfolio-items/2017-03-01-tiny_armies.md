@@ -10,3 +10,5 @@ project-duration: 2.5 Years
 ---
 
 Tiny Armies is a PVP Multiplayer Action Game for iOS and Android.
+
+[More...]({% post_url 2017-03-01-tiny_armies %})
