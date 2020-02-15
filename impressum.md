@@ -2,7 +2,7 @@
 layout: page
 title: Impressum
 sidebar_sort_order: 4
-sidebar_link: true
+sidebar_link: false
 ---
 
 Angaben gemäß § 5 TMG

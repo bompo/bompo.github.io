@@ -17,8 +17,7 @@ title: >-
   Stefan Wagner
 email: mail.bompo@egmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I develop games and software, if you are interested in my work you can send me a email. 
-  For more frequent updates on what I'm up too, check out my Blog.
+  I'm a software developer, if you are interested in my work, you can send me an <a href="mailto:mail.bompo+portfolio@gmail.com">e-mail</a>. For more frequent updates about my work, please check my blog.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: twbompo

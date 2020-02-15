@@ -74,6 +74,7 @@ a svg {
     
 }
 
+
 #sidebar-nav-links {
 	margin-bottom: 2rem;
 }
@@ -152,19 +153,34 @@ a svg {
 
 @media (min-width: 49rem) {
 	#sidebar-icon-links-bottom {
-		bottom: 0;
+		bottom: 20px;
 	    left: 13rem;
 	    position: absolute !important;
 	}
 
 	#sidebar-icon-links {
-		bottom: 0;
+		bottom: 20px;
 	    left: 1.5rem;
 	    position: absolute !important;
 	}
+
+  .impressum-link {
+      position: absolute;
+      left: 35px;
+      bottom: 10px;
+      font-size: 10px !important;
+  }
 }
 
 @media (max-width: 49rem) {
+  
+
+  .impressum-link {
+      position: absolute;
+      right: 20px;
+      top: 399px;
+      font-size: 10px !important;
+  }
 
   .content .pagination:first-child {
       margin-top: 0em;
