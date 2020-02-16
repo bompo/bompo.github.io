@@ -7,17 +7,17 @@ sidebar_link: true
 
 I am a software developer with over 9 years of experience in the professional field. If you are interested in my work, just send me an <a href="mailto:mail.bompo+portfolio@gmail.com">e-mail</a>.
 
-* 👤👥 work best with a team
+* 👥 loves to work with a motivated team
 
-* 📱💻 deployed to mobile and desktop
+* 📱 specialized in mobile
 
-* ❤️ prefer working on meaningful projects with motivated people
+* ❤️ passion for working on meaningful projects
 
 ## Specialized in
 * Development and product design of mobile applications
 * Data-driven development (Evaluation of user analytics and using the results to design/adapt new features)
-* Leading a development team
-* Comfortable working with different frameworks and languages 
+* Leading a team while being a jack of all trades
+* Working in a fast paced environment with different frameworks and languages 
 
 ## Work experience
 `2015 - current` __Die Kapitäne Media GmbH__  
