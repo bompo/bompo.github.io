@@ -5,7 +5,7 @@ sidebar_sort_order: 3
 sidebar_link: true
 ---
 
-I am a software developer with over 9 years of experience in the professional field. If you are interested in my work, just send me an <a href="mailto:mail.bompo+portfolio@gmail.com">e-mail</a>.
+I am a software developer with over 9 years of experience in the professional field. If you are interested in my work, just send me an <a href="mailto:mail@stefanwagner.dev">e-mail</a>.
 
 * 👥 loves to work with a motivated team
 
