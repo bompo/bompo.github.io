@@ -14,7 +14,7 @@ excerpt_separator: "<!--more-->"
 
 {% include video.html video-file-name="lovoo_radar.mp4" video-style="portrait" %}
  ឵឵
-I enhanced the old radar with fluid 60fps animations. Old version used simple android animations. Made with libGDX.
+I enhanced the old radar with fluid 60fps animations. The old version used simple android animations. Made with libGDX.
 
 **Install** 
 <https://play.google.com/store/apps/details?id=de.kapitaene.hifrog>

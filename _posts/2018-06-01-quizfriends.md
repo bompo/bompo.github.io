@@ -18,7 +18,7 @@ Quizfriends can earn you real cash. You have to collect coins in Quizzes or comp
 
 The game is developed in Unity. We used a custom Heroku Backend for the user and game logic. The development took roughly a year with 7 people on the team. 
 
-We put great effort into a fast payout system for our users. This includes a automatic paypal verification and a chat bot for support.
+We put great effort into a fast payout system for our users. This includes an automatic PayPal verification and a chatbot for support.
 
 **Play**
 

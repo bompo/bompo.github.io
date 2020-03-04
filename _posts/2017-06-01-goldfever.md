@@ -14,7 +14,7 @@ excerpt_separator: "<!--more-->"
 
 {% include video.html video-file-name="goldfever.mp4" video-style="portrait" %}
 
-In Gold Fever you have to complete various offers to collect coins. This coins can than be used to mine gold. Which than can be exchanged to real money.
+In Gold Fever you have to complete various offers to collect coins. Those coins can then be used to mine gold. Which then can be exchanged to real money.
 
 The game is developed in Unity. We used a custom Heroku Backend for the user and game logic. 
 
