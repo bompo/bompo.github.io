@@ -17,7 +17,7 @@ I am a software developer with over 9 years of experience in the professional fi
 * Development and product design of mobile applications
 * Data-driven development (Evaluation of user analytics and using the results to design/adapt new features)
 * Leading a team while being a jack of all trades
-* Working in a fast paced environment with different frameworks and languages 
+* Working in a fast-paced environment with different frameworks and languages 
 
 ## Work experience
 `2015 - current` __Die Kapitäne Media GmbH__  
@@ -37,7 +37,7 @@ Student Assistant
 Development of a digital/analog signal display software for the display and processing of measurement results in Java
 
 `2005 - 2007` __DGIS Service GmbH__  
-Apprenticeship as computer scientist with European additional qualification  
+Apprenticeship as a computer scientist with European additional qualification  
 Development and extension of a mapping software 
 
 ## Education
