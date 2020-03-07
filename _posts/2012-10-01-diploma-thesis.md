@@ -14,7 +14,7 @@ This [thesis](https://www.stefanwagner.dev/assets/pdf/cgthesis.pdf) evaluates me
 
 The models can also be streamed with the progressive mode of JPEG and PNG by using the image geometry technique. The decode time is a large part of the overall time if the user has a very fast connection, therefore those decode times are measured and compared. The size of the textures is larger than the size of the compressed models, but it isn’t possible to compress them any further without decreasing the quality, therefore a streaming method for the textures which uses progressive JPEGs is evaluated. The last part evaluates the given possibilities to store the downloaded 3D models and textures at the client.
 
-University: [TU Dresden](http://www.inf.tu-dresden.de/index.php?node_id=3316)
-In Cooperation with Crytek GmbH
+University: [TU Dresden](http://www.inf.tu-dresden.de/index.php?node_id=3316)  
+In Cooperation with Crytek GmbH  
  ឵឵
 [View Thesis](https://www.stefanwagner.dev/assets/pdf/cgthesis.pdf)
