@@ -16,5 +16,6 @@ The models can also be streamed with the progressive mode of JPEG and PNG by usi
 
 University: [TU Dresden](http://www.inf.tu-dresden.de/index.php?node_id=3316)  
 In Cooperation with Crytek GmbH  
- ឵឵
+
+
 [View Thesis](https://www.stefanwagner.dev/assets/pdf/cgthesis.pdf)
