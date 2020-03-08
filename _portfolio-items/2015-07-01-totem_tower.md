@@ -1,6 +1,6 @@
 ---
 name: Totem Tower
-date: 2015-07-01T10:20:00Z
+date: 2019-10-01T10:20:00Z
 cover-image: totemtower_cover.jpg
 video-id: EMLplfjU9aU
 play-store-link: https://play.google.com/store/apps/details?id=de.kapitaene.totem
