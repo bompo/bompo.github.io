@@ -5,7 +5,7 @@ sidebar_sort_order: 3
 sidebar_link: true
 ---
 
-I am a software developer with over 9 years of experience in the professional field. If you are interested in my work, just send me an <a href="mailto:mail@stefanwagner.dev">e-mail</a>.
+I am a software developer with over 10 years of experience in the professional field. If you are interested in my work, just send me an <a href="mailto:mail@stefanwagner.dev">e-mail</a>.
 
 * 👥 loves to work with a motivated team
 
@@ -20,7 +20,10 @@ I am a software developer with over 9 years of experience in the professional fi
 * Working in a fast-paced environment with different frameworks and languages 
 
 ## Work experience
-`2015 - current` __Die Kapitäne Media GmbH__  
+`2021 - current` __Wandelbots GmbH__  
+Programming to help others teach robots without programming
+
+`2015 - 2021` __Die Kapitäne Media GmbH__  
 Lead Developer working on mobile games and experiences
 
 `2013 - 2015` __Fraunhofer IGD__  
