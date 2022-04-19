@@ -35,7 +35,7 @@ plugins:
   - jekyll-paginate
 
 sidebar_home_link:  true
-google_analytics: UA-159993715-1
+google_analytics: G-9PPB2THR7T
 
 collections:
   portfolio-items:
